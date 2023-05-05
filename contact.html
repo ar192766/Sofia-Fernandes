@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sofia Fernandes</title>
+	
+	<!-- === CSS === -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/media-style.css"/>
+</head>
+<body>
+	<div class="top-nav">
+		<div class="tn-inner-wrap">
+			<ul class="top-nav-links">
+				<li><a href="#">SHOP</a></li>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="london.html">LONDON</a></li>
+				<li><a href="st-ives.html">ST IVES</a></li>
+				<li><a href="2019.html">2019</a></li>
+				<li><a href="drawings-prints.html">DRAWING &#38; PRINTS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li class="active"><a href="">CONTACT</a></li>
+			</ul>
+			
+			<div class="menu-wrap">
+				<a>Menu</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="header-content">
+		<div>
+		</div>
+		<h1>Sofia Fernandes</h1>
+		<p>FINE ARTIST, FALMOUTH</>
+	</header>
+	
+	<nav>
+		<ul class="nav-links">
+			<!--<li><a href="#">SHOP</a></li>-->
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="london.html">LONDON</a></li>
+			<li><a href="st-ives.html">ST IVES</a></li>
+			<li><a href="2019.html">2019</a></li>
+			<li><a href="drawings-prints.html">DRAWING &#38; PRINTS</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li class="active"><a href="#">CONTACT</a></li>
+		</ul>
+	</nav>
+	
+	<section class="contact">
+		<div class="content-container">
+			<div class="page-image"> <!-- Class name needs changing -->
+				<figure>
+					<img src="images/contact/img-1.jpg">
+				</figure>
+				<p>Contact</p>
+			</div>
+			
+			<div class="contact-form">
+				<div class="form-content">
+					<div class="form-title">
+						<h2>Contact Me</h2>
+					</div>
+					<div class="form">
+						<div class="name-section">
+							<label for="name">Name *</label><br>
+							<input type="text" id="fname" value="">
+							<input type="text" id="lname" value="">
+							<label for="name" class="first-name">First Name</label>
+							<label for="name" class="last-name">Last Name</label>
+						</div>
+						<div class="email-section">
+							<label for="email">Email Address *</label><br>
+							<input type="text" id="email" value="">
+						</div>
+						<div class="Subject-section">
+							<label for="subject">Subject *</label><br>
+							<input type="text" id="subject" value="">
+						</div>
+						<div class="message-section">
+							<label for="messgae">Message *</label><br>
+							<textarea aria-required="true"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+	</footer>
+
+	
+	<script>
+		const menubtn = document.querySelector('.menu-wrap')
+		const topNav = document.querySelector('.top-nav')
+		
+		menubtn.addEventListener('click', ()=>{
+		topNav.classList.toggle('mobile-menu')
+		})
+	</script>
+</body>
+</html>
+
+<!-- https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ -->

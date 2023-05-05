@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sofia Fernandes</title>
+	
+	<!-- === CSS === -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/media-style.css"/>
+</head>
+<body>
+	<div class="top-nav">
+		<div class="tn-inner-wrap">
+			<ul class="top-nav-links">
+				<!--<li><a href="#">SHOP</a></li>-->
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="london.html">LONDON</a></li>
+				<li><a href="st-ives.html">ST IVES</a></li>
+				<li class="active"><a href="">2019</a></li>
+				<li><a href="drawings-prints.html">DRAWING &#38; PRINTS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+			
+			<div class="menu-wrap">
+				<a>Menu</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="header-content">
+		<div>
+		</div>
+		<h1>Sofia Fernandes</h1>
+		<p>FINE ARTIST, FALMOUTH</>
+	</header>
+	
+	<nav>
+		<ul class="nav-links">
+			<li><a href="#">SHOP</a></li>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="london.html">LONDON</a></li>
+			<li><a href="st-ives.html">ST IVES</a></li>
+			<li class="active"><a href="#">2019</a></li>
+			<li><a href="drawings-prints.html">DRAWING &#38; PRINTS</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
+	
+	<section class="gallery">
+		<div class="gallery-content">
+			<!--row 1-->
+			<figure class="gallery-item gallery-item-1">
+				<img src="images/2019/r1-img-1.jfif" class="gallery-img">
+			</figure>
+			<figure class="gallery-item gallery-item-2">
+				<img src="images/2019/r1-img-2.jfif" class="gallery-img">
+			</figure>
+			<!--row 2-->
+			<figure class="gallery-item gallery-item-3">
+				<img src="images/2019/r2-img-1.png" class="gallery-img">
+			</figure>
+			<figure class="gallery-item gallery-item-4">
+				<img src="images/2019/r2-img-2.jfif" class="gallery-img">
+			</figure>
+			<figure class="gallery-item gallery-item-5">
+				<img src="images/2019/r2-img-3.jfif" class="gallery-img">
+			</figure>
+			<figure class="gallery-item gallery-item-6">
+				<img src="images/2019/r2-img-4.jfif" class="gallery-img">
+			</figure>
+			<!--row 3-->
+			<figure class="gallery-item gallery-item-7">
+				<img src="images/2019/r3-img-1.jfif" class="gallery-img">
+			</figure>
+			<figure class="gallery-item gallery-item-8">
+				<img src="images/2019/r3-img-2.jfif" class="gallery-img">
+			</figure>
+			<figure class="gallery-item gallery-item-9">
+				<img src="images/2019/r3-img-3.jfif" class="gallery-img">
+			</figure>
+			<figure class="gallery-item gallery-item-10">
+				<img src="images/2019/r3-img-4.jfif" class="gallery-img">
+			</figure>
+			<!--row 4-->
+			<figure class="gallery-item gallery-item-11">
+				<img src="images/2019/r4-img-1.jpg" class="gallery-img">
+			</figure>
+			<!--row 5-->
+			<figure class="gallery-item gallery-item-12">
+				<img src="images/2019/r5-img-1.jpg" class="gallery-img">
+			</figure>
+			<!--row 6-->
+			<figure class="gallery-item gallery-item-13">
+				<img src="images/2019/r6-img-1.jfif" class="gallery-img">
+			</figure>
+			<!--row 7-->
+			<figure class="gallery-item gallery-item-14">
+				<img src="images/2019/r7-img-1.jfif" class="gallery-img">
+			</figure>
+			<!--row 8-->
+			<figure class="gallery-item gallery-item-15">
+				<img src="images/2019/r8-img-1.jfif" class="gallery-img">
+			</figure>
+		</div>
+	</section>
+	
+	<footer>
+	</footer>
+
+	
+	<script>
+		const menubtn = document.querySelector('.menu-wrap')
+		const topNav = document.querySelector('.top-nav')
+		
+		menubtn.addEventListener('click', ()=>{
+		topNav.classList.toggle('mobile-menu')
+		})
+	</script>
+</body>
+</html>
+
+<!-- https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ -->

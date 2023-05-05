@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sofia Fernandes</title>
+	
+	<!-- === CSS === -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/media-style.css"/>
+</head>
+<body>
+	<div class="top-nav">
+		<div class="tn-inner-wrap">
+			<ul class="top-nav-links">
+				<!--<li><a href="#">SHOP</a></li>-->
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="london.html">LONDON</a></li>
+				<li><a href="st-ives.html">ST IVES</a></li>
+				<li><a href="2019.html">2019</a></li>
+				<li><a href="drawings-prints.html">DRAWING &#38; PRINTS</a></li>
+				<li class="active"><a href="#">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+			
+			<div class="menu-wrap">
+				<a>Menu</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="header-content">
+		<h1>Sofia Fernandes</h1>
+		<p>FINE ARTIST, FALMOUTH</>
+	</header>
+	
+	<nav>
+		<ul class="nav-links">
+			<li><a href="#">SHOP</a></li>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="london.html">LONDON</a></li>
+			<li><a href="st-ives.html">ST IVES</a></li>
+			<li><a href="2019.html">2019</a></li>
+			<li><a href="drawings-prints.html">DRAWING &#38; PRINTS</a></li>
+			<li class="active"><a href="#">ABOUT</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
+	
+	<section class="about">
+		<div class="content-container">
+			<div class="img-strip">
+				<figure>
+					<img src="images/about/img-1.jpeg">
+				</figure>
+				<figure>
+					<img src="images/about/img-2.jpeg">
+				</figure>
+				<figure>
+					<img src="images/about/img-3.jpeg">
+				</figure>
+				<figure>
+					<img src="images/about/img-4.jpeg">
+				</figure>
+			</div>
+			<div class="education">
+				<p>Education:</p>
+				<p>Fine Art BA(Hons) 2.1 Falmouth University 2016-2019</p>
+				<p>2019 </p>
+				<p>. Masterpeace Art Instructor (ongoing) London</p>
+				<p>. Masterpeace Residency London</p>
+				<p>. Midas Award (Placement 2020), Newlyn Art Gallery & The Exchange </p>
+				<p>. Falmouth University London Showcase, Assembly Point, Peckham</p>
+				<p>. Falmouth University Degree Show</p>
+				<p>2018</p>
+				<p>. In Residency exhibition, Falmouth University</p>
+				<p>. Porthmeor Studios Residency, St Ives</p>
+				<p>. 6/5 exhibition, Porthmeor Studios, Studio 5</p>
+				<p>. bsidecollective exhibition, The Chintz Symposium, Falmouth</p>
+				
+				<p><strong>I am a graduate of Falmouth University and am continuing to pursue a mark-making, 
+						   material based practice, which constantly embodies the landscape and plays with 
+						   unpredictability. Taking from the ridges and materials that surround us to recreate 
+						   the ongoing forces of nature.</strong></p>
+				<p><strong>Twisted figure-like forms, floating objects, and a random array of words, generate 
+						   shifting contingent narratives in my work. Through an exploration of language, material, 
+						   and chance, I create my own opaque landscape/world.</strong></p>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+	</footer>
+
+	
+	<script>
+		const menubtn = document.querySelector('.menu-wrap')
+		const topNav = document.querySelector('.top-nav')
+		
+		menubtn.addEventListener('click', ()=>{
+		topNav.classList.toggle('mobile-menu')
+		})
+	</script>
+</body>
+</html>
+
+<!-- https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ -->

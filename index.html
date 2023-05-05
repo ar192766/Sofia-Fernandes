@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sofia Fernandes</title>
+	
+	<!-- === CSS === -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/media-style.css"/>
+</head>
+<body>
+	<div class="top-nav">
+		<div class="tn-inner-wrap">
+			<ul class="top-nav-links">
+				<!--<li><a href="#">SHOP</a></li>-->
+				<li class="active"><a href="#">HOME</a></li>
+				<li><a href="london.html">LONDON</a></li>
+				<li><a href="st-ives.html">ST IVES</a></li>
+				<li><a href="2019.html">2019</a></li>
+				<li><a href="drawings-prints.html">DRAWING &#38; PRINTS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+			
+			<div class="menu-wrap">
+				<a>Menu</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="header-content">
+		<div>
+		</div>
+		<h1>Sofia Fernandes</h1>
+		<p>FINE ARTIST, FALMOUTH</>
+	</header>
+	
+	<nav>
+		<ul class="nav-links">
+			<li><a href="#">SHOP</a></li>
+			<li class="active"><a href="#">HOME</a></li>
+			<li><a href="london.html">LONDON</a></li>
+			<li><a href="st-ives.html">ST IVES</a></li>
+			<li><a href="2019.html">2019</a></li>
+			<li><a href="drawings-prints.html">DRAWING &#38; PRINTS</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
+	
+	<section class="slideshow">
+		<div class="slideshow-container fade">
+			<div class="my-slides fade">
+				<img src="images/slideshow/0.jfif" class="slideshow-img">
+			</div>
+			<div class="my-slides fade">
+				<img src="images/slideshow/1.jfif" class="slideshow-img">
+			</div>
+			<div class="my-slides fade">
+				<img src="images/slideshow/2.jfif" class="slideshow-img">
+			</div>
+			<div class="my-slides fade">
+				<img src="images/slideshow/3.jfif" class="slideshow-img">
+			</div>
+			<div class="my-slides fade">
+				<img src="images/slideshow/4.jfif" class="slideshow-img">
+			</div>
+			<div class="my-slides fade">
+				<img src="images/slideshow/5.jfif" class="slideshow-img">
+			</div>
+			<div class="my-slides fade">
+				<img src="images/slideshow/6.jfif" class="slideshow-img">
+			</div>
+			<div class="my-slides fade">
+				<img src="images/slideshow/7.jfif" class="slideshow-img">
+			</div>
+			<div class="my-slides fade">
+				<img src="images/slideshow/8.jfif" class="slideshow-img">
+			</div>
+		<div>
+	</section>
+	<footer>
+	</footer>
+
+	
+	<script>
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			let i;
+			let slides = document.getElementsByClassName("my-slides");
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			slides[slideIndex-1].style.display = "block"; 
+			setTimeout(showSlides, 3000); // Change image every 3 seconds
+		}
+		
+		const menubtn = document.querySelector('.menu-wrap')
+		const topNav = document.querySelector('.top-nav')
+		
+		menubtn.addEventListener('click', ()=>{
+		topNav.classList.toggle('mobile-menu')
+		})
+	</script>
+</body>
+</html>
